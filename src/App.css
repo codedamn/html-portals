@@ -1,22 +1,113 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+	overflow: hidden;
+	font-family: Roboto, serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
 }
 
-.App-link {
-  color: #09d3ac;
+.root {
+	width: 700px;
+	border: 2px solid #eee;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.not-available h1 {
+	color: rgb(156, 0, 0);
+	text-align: center;
+}
+
+.not-available {
+	padding: 10px;
+	background: #eee;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.not-available p {
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+div#input-field {
+	display: flex;
+	align-items: center;
+}
+
+.input {
+	flex: 1;
+	margin-right: 20px!important;
+}
+
+.heading {
+	text-align: center;
+}
+
+h2.heading {
+	margin: 20px;
+}
+
+.list {
+	margin-left: 20px;
+}
+
+.list a {
+	text-decoration: none;
+	color: black;
+	font-style: italic;
+}
+
+.list li {
+	margin: 10px 0;
+}
+
+portal {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	box-shadow: 0 0 20px 10px #999;
+	transform: scale(0.4);
+	transform-origin: bottom left;
+	bottom: 20px;
+	left: 20px;
+	animation-name: fade-in;
+	animation-duration: 1s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+
+.portal-transition {
+	transition: transform 0.4s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.portal-transition {
+		transition: transform 0.001s;
+	}
+}
+
+.portal-reveal {
+	transform: scale(1.0) translateX(-20px) translateY(20px);
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
