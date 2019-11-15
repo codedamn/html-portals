@@ -57,7 +57,7 @@ function App() {
 			<ul className="list">
 				<li><a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/watch?v=X2zqwMBBvIs">Chrome Dev Summit 2019 talk</a></li>
 				<li><a rel="noopener noreferrer" target="_blank" href="https://wicg.github.io/portals/">Spec</a></li>
-				<li><a rel="noopener noreferrer" target="_blank" href="https://wicg.github.io/portals/">Source code</a></li>
+				<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/codedamn/html-portals/">Source code</a></li>
 			</ul>
 		</div>
 	)
