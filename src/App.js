@@ -11,7 +11,7 @@ const WarningOrNull = () => {
 
 	return <div className="not-available">
 		<h1>Your browser does not support portals, yet.</h1>
-		<p>Click here to check a demonstration</p>
+		<p><a href="https://www.youtube.com/watch?v=1rG3m7c-e8A" target="_blank">Click here</a> to check a demonstration</p>
 	</div>
 }
 
